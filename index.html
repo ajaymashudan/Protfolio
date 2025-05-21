@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="custom-cursor"></div>
+  <div class="cursor-trail"></div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Ajay Kumar</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg" style="background-image: url('my-background.jpg') center/cover no-repeat;"></div>
+      <div class="hero-content">
+        <h1 class="hero-title"><span class="typewriter">Ajay Kumar</span></h1>
+        <h2 class="hero-subtitle">Aspiring IT Professional</h2>
+        <p class="hero-tagline">Seeking to leverage my technical skills and passion for technology to drive innovation and success.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <img src="./myimag.jpg" alt="Ajay Kumar Headshot" class="about-headshot">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>Hi, I'm Ajay Kumar, an aspiring IT professional currently pursuing my MCA at Chandigarh University. I am passionate about software development, problem-solving, and leveraging technology to create impactful solutions. My journey so far has equipped me with a solid foundation in Java, databases, and web technologies.</p>
+          <ul class="about-details">
+            <li><strong>Email:</strong> atmsajay53@gmail.com</li>
+            <li><strong>Phone:</strong> 7759977318</li>
+            <li><strong>Location:</strong> Gaya, Bihar</li>
+            <li><strong>LinkedIn:</strong> <a href="#">Ajay-kumar</a></li>
+            <li><strong>GitHub:</strong> <a href="#">ajaymashudan</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="education">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>MCA</strong>, Chandigarh University (2023–2025), GPA: 7.01/10.0</li>
+          <li><strong>BCA</strong>, Magadh University (2019–2022), 72.02%</li>
+          <li><strong>ISC</strong>, BSEB (2016–2019), 71.00%</li>
+          <li><strong>Matriculation</strong>, BSEB (2015–2016), 71.80%</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-bar" data-skill="Java" data-level="80"><span>Java</span></div>
+        <div class="skill-bar" data-skill="C/C++/Python" data-level="50"><span>C, C++, Python</span></div>
+        <div class="skill-bar" data-skill="SQL" data-level="70"><span>SQL</span></div>
+        <div class="skill-bar" data-skill="HTML/CSS" data-level="40"><span>HTML, CSS</span></div>
+        <div class="skill-bar" data-skill="MySQL/Oracle" data-level="60"><span>MySQL, Oracle 10g</span></div>
+        <div class="skill-bar" data-skill="Spring Boot/MVC/Hibernate/JDBC" data-level="60"><span>Spring Boot, MVC, Hibernate, JDBC</span></div>
+        <div class="skill-bar" data-skill="Git/IntelliJ/Windows" data-level="60"><span>Git, IntelliJ IDEA, Windows</span></div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="web java">
+          <img src="https://via.placeholder.com/300x180" alt="Smart Contact Manager" class="project-thumb">
+          <div class="project-info">
+            <h3>Smart Contact Manager</h3>
+            <p>Comprehensive contact management system built with Java, Spring Boot, MySQL, HTML, CSS, and JavaScript. Features admin-only access, reminders, and resource management tools.</p>
+            <a href="#" class="btn btn-project">View Project</a>
+          </div>
+        </div>
+        <div class="project-card" data-category="java">
+          <img src="https://via.placeholder.com/300x180" alt="School Management System" class="project-thumb">
+          <div class="project-info">
+            <h3>School Management System</h3>
+            <p>Centralized system for managing school records, built with Java Spring Boot and MySQL. Features include student, staff, and teacher management, with secure admin controls.</p>
+            <a href="#" class="btn btn-project">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form class="contact-form" autocomplete="off">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <div class="contact-social">
+        <a href="#" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="social-icon"></a>
+        <a href="#" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="social-icon"></a>
+        <a href="mailto:atmsajay53@gmail.com" title="Email"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Email" class="social-icon"></a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <span>&copy; 2024 Ajay Kumar. All rights reserved.</span>
+      <nav class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  <div class="background-animations"></div>
+</body>
+</html> 
